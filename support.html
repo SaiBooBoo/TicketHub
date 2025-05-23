@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/support.css">
+    <script src="js/support.js" defer></script>
+    <script src="js/nav.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/headernav.css"> 
+    <link rel="stylesheet" href="css/trendingEvents.css">
+    
+</head>
+<body>
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <!-- <a href="index.html">
+            <img src="images/logo1.jpg" alt="My Website Logo" width="50" height="50" aria-hidden="true" decoding="async">
+        </a> -->
+
+        <!-- <a href="index.html" class="cs-logo" aria-label="back to home"> -->
+        <h2>
+            <a href="index.html"><span class="navbar-brand text-light m-0 h1"><b>TicketsHub</b></span></a>
+        </h2> 
+            <!-- <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async"> -->
+            <!-- <img src="images/chair.png"  alt="logo" width="210" height="29" aria-hidden="true" decoding="async"> -->
+ 
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    
+                    <li class="cs-li">
+                        <a href="index.html" class="cs-li-link">
+                            Home
+                        </a>
+                    </li>
+
+                    <!-- Sports Section NavBar -->
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link">
+                                Sports
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul cs-content-white">
+                                <li class="cs-drop-li">
+                                    <a href="sports.html" class="cs-li-link cs-drop-link">GameSlot</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="football.html" class="cs-li-link cs-drop-link">Football</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="pingpong.html" class="cs-li-link cs-drop-link">Ping Pong</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="tennis.html" class="cs-li-link cs-drop-link">Tennis</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="nba.html" class="cs-li-link cs-drop-link">NBA</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="wwe.html" class="cs-li-link cs-drop-link">WWE</a>
+                                </li>
+                            </ul>
+                        </li>
+                   
+                        <!-- Music Section NavBar -->
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link">
+                                Music
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li">
+                                    <a href="concert.html" class="cs-li-link cs-drop-link">Popular Artists</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="concert.html" class="cs-li-link cs-drop-link">Genres</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="concert.html" class="cs-li-link cs-drop-link">Concert</a>
+                                </li>
+                            </ul>
+
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Shows
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="broadway.html" class="cs-li-link cs-drop-link">Broadway</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="comedy.html" class="cs-li-link cs-drop-link">Comedy</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="classical.html" class="cs-li-link cs-drop-link">Classical</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Cities
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="newYork.html" class="cs-li-link cs-drop-link">New York</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="losAngeles.html" class="cs-li-link cs-drop-link">Los Angeles</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li">
+                        <a href="sell.html" class="cs-li-link">
+                            Sell
+                        </a>
+                    </li>                
+                </ul>
+            </div>
+        </nav>
+        <div class="cs-content ">
+            <div class="cs-social">                
+                <li class="cs-li">
+                    <a href="login.html" class="cs-li-link m-4">Contact</a>
+                    <a class="text-light" href="loginForm.html"> <button class="btn btn-outline-dark">Login</button></a>
+                 </div>
+                </li>
+            </div>
+        </div>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>   
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-351">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Asked questions</span>
+            <h2 class="cs-title mt-4">Hi there, how can we help?</h2>
+        </div>
+        <ul class="cs-faq-group">
+            <!-- Active class added as default -->
+            <li class="cs-faq-item active">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Where are my tickets?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Although tickets can be delivered to your account instantly, there may be a period of time between your order confirmation and when you receive the tickets. You may not receive mobile transfer tickets until within 24 hours of the event due to delayed release policies that venues use to keep your tickets safe. 
+
+Please log in or select an order above to get more information on the status of your tickets.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Can I change, cancel, or get a refund on my order?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    TicketsHub is a marketplace that sells tickets from a variety of sources. This means there are different ticket change, cancelation, and refund policies depending on your order details.
+
+                    Please log in or select an order above to get more details about the policy for your specific order.                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Can I buy a ticket to an event that has already started?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    The short answer? Usually. Each event and venue may have different regulations but for the most part, if tickets are still available on TicketsHub, you should be a-okay to buy tickets for that event! 
+
+                    Some notable exceptions are Broadway and classical music productions which tend to have very strict door and start time policies, music festivals which require physical tickets or wristbands to be mailed to you beforehand, and some postseason sporting events like multi-session tournaments...etc. 
+                    
+                    In any case, if tickets are not able to be sold for a specific event which has already started, you'll receive an email and notification from TicketsHub letting you know that your order has not gone through.                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Can I buy tickets as a gift?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Absolutely! TicketsHub makes it easy to gift tickets with our Send feature and, unless otherwise specified, you won't need to change the name on the tickets you purchase. 
+
+                    To buy tickets as a gift for someone else, go through the checkout process as normal and then simply use the Send feature in your TicketsHub account to forward those tickets to your gift recipient. Check out this article on how to send tickets with TicketsHub.                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Does my infant need a ticket?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    For many events, children under 2 years of age will not need their own ticket; however, every event and venue may have their own rules for infant tickets so please check the venue's website if you are bringing a young child with you.                </p>
+            </li>
+        </ul>
+        <!--Added second UL, this allows you to open an FAQ item on each side without messing up the flexbox for the other -->
+        <ul class="cs-faq-group">
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        What happens when I choose the Best Available tickets?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    With Best Available tickets, we'll check all sections and prices to provide you the best ticket options at that price point, depending on availability.
+
+                    Once the Best Available tickets are selected, you have the option to checkout or search for new tickets. If you pass on the original tickets offered, you may lose the option to purchase them, and tickets may sell out while you are searching.                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Will the view from my seat actually look like what’s shown when I’m selecting tickets?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    We try our best to provide you with the most accurate image of what we expect the view from your seat will be! However, while the view from seat image you see will be from the same section where your seat will be located, it may not show the actual view from your specific seat and will not be identical to the actual view you will have.
+
+                    This is particularly the case when you can only select a general section or row, instead of a specific seat, where the actual view from your seat will vary depending on where exactly in the section or row you will be seated. For example, the view from the front row of the section will be different from the view from the last row of the same section, which will particularly be the case if the section covers a large area or various areas at the venue.                 </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Does TicketsHub charge a fee to buy tickets?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    When you buy tickets on TicketsHub, you will be charged service and delivery fees which can vary based on the event and the type of ticket that you’re receiving. TicketsHub’s fees are in a range commensurate with other ticket market participants’ fees, and are driven by the same supply and demand factors. These fees help TicketsHub keep the lights on, pay the sellers that list tickets on our marketplace, and continue to provide a great product for finding live events. 
+
+                    You can view listings with or without the fees included by toggling the Prices with fees filter while viewing an event on the TicketsHub website or by tapping Filters when viewing an event in the TicketsHub app. You will also see a breakdown of the delivery and service fees for your order before it's submitted.
+                    
+                    Since the fees are part of the cost of your order and displayed to you before placing an order, we cannot offer a refund for them unless your event is cancelled outright. Taxes may also apply to your purchase if you are purchasing tickets to an event in a location which mandates sales and or entertainment taxes.                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        What is Deal Score?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Deal Score is a calculation made by TicketsHub which tells you exactly how good a deal you're getting when you buy a ticket. You can use Deal Score to quickly find the best deals, buy with confidence, and save money in the process! Or, if your selling tickets, Deal Score will tell you how your listing matches up against others.                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        What are seller notes?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    We always want you to know what you’re getting, so sellers will sometimes leave helpful notes on their listings. The notes may describe the delivery method or any additional information about the tickets that you’re purchasing like amenities or obstructed views, so make sure to read them carefully before buying your tickets.                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+                         
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-1761">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-group">
+            <!-- <img class="cs-logomark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-logomark.svg" alt="logo" loading="lazy" decoding="async" height="100" width="122"> -->
+            <h2 class="cs-title"><br>TicketHub</h2>
+
+        </div>
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Menu</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="">Home</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">How it works</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">How to sell</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">About us</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Become a partner</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Resources</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="">About</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Press</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Jobs</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Inclusion</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Digital Accessibility</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">TicketHub Blog</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Social</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="">Twitter</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Facebook</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Instagram</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Tiktok</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">YouTube</a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- Links -->
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Developers</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="">Platform</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Developer Blog</a>
+                </li>
+            </ul>
+        </div>
+    
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-credit">
+            © Copyright 2025 <a href="" class="cs-credit-link" target="_blank">TicketsHub</a>
+        </span>
+        <div class="cs-bottom-links">
+            <a href="" class="cs-bottom-link">Terms & Conditions</a>
+            <a href="" class="cs-bottom-link">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .fancy-text {
+   font-size: 200rem;
+   color: #f80000;
+   text-shadow: 3px 3px 6px rgba(253, 9, 9, 0.4);
+ }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+       crossorigin="anonymous">
+   <title>Document</title>
+
+   <script src="js/nav.js" defer></script>
+   <link rel="stylesheet" href="css/trendingEvents.css">
+    <link rel="stylesheet" href="css/review.css">
+   <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/concert.css">
+    <link rel="stylesheet" href="css/popularConcert.css">
+   <link rel="stylesheet" href="css/headernav.css">
+
+</head>
+<body>
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <!-- <a href="index.html">
+            <img src="images/logo1.jpg" alt="My Website Logo" width="50" height="50" aria-hidden="true" decoding="async">
+        </a> -->
+
+        <!-- <a href="index.html" class="cs-logo" aria-label="back to home"> -->
+        <h2>
+            <a href="index.html"><span class="navbar-brand text-light m-0 h1"><b>TicketsHub</b></span></a>
+        </h2> 
+            <!-- <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async"> -->
+            <!-- <img src="images/chair.png"  alt="logo" width="210" height="29" aria-hidden="true" decoding="async"> -->
+ 
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    
+                    <!-- Sports Section NavBar -->
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link">
+                                Sports
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li">
+                                    <a href="sports.html" class="cs-li-link cs-drop-link">GameSlot</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="football.html" class="cs-li-link cs-drop-link">Football</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="pingpong.html" class="cs-li-link cs-drop-link">Ping Pong</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="tennis.html" class="cs-li-link cs-drop-link">Tennis</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="nba.html" class="cs-li-link cs-drop-link">NBA</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="wwe.html" class="cs-li-link cs-drop-link">WWE</a>
+                                </li>
+                            </ul>
+                        </li>
+                   
+                        <!-- Music Section NavBar -->
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link">
+                                Music
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li">
+                                    <a href="concert.html" class="cs-li-link cs-drop-link">Popular Artists</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="concert.html" class="cs-li-link cs-drop-link">Genres</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="concert.html" class="cs-li-link cs-drop-link">Concert</a>
+                                </li>
+                            </ul>
+
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Shows
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="broadway.html" class="cs-li-link cs-drop-link">Broadway</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="comedy.html" class="cs-li-link cs-drop-link">Comedy</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="classical.html" class="cs-li-link cs-drop-link">Classical</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Cities
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="newYork.html" class="cs-li-link cs-drop-link">New York</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="losAngeles.html" class="cs-li-link cs-drop-link">Los Angeles</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li">
+                        <a href="sell.html" class="cs-li-link">
+                            Sell
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="support.html" class="cs-li-link">
+                            Support
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <div class="cs-content ">
+            <div class="cs-social">                
+                <li class="cs-li">
+                    <a href="login.html" class="cs-li-link m-4">Contact</a>
+                    <a class="text-light" href="loginForm.html"> <button class="btn btn-outline-dark">Login</button></a>
+                 </div>
+                </li>
+            </div>
+        </div>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+            
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-1059">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title fancy-text">Classical Tickets</h1>
+            <p class="cs-text fancy-text">
+                Discover the best tickets to Classical events.</p>
+                <hr style="border: none; height: 2px; background-color: lightgrey; width: 200%;">
+            
+        </div>
+    </div>
+    
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <!-- <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-m.jpg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic.jpg"> -->
+        <img decoding="async" src="images/classicalConcert.jpg" alt="mechanic" width="2250" height="1500" aria-hidden="true">
+    </picture>
+</section>
+            
+
+<!-- ===================================== --> 
+<!--                  Services             -->
+<!-- ============================================ -->
+
+<section id="services-1628">
+    <div class="cs-container">
+        <div class="cs-content">
+                <h2 class="cs-title">Popular Classical Pieces</h2>
+        </div>                  
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="loginForm.html" class="cs-link">
+                    <picture class="cs-picture rounded">
+                        <!--Mobile Image-->
+                        <!-- <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/nuclear.jpg"> -->
+                        <!--Tablet and above Image-->
+                        <!-- <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/nuclear.jpg"> -->
+                        <img loading="lazy" decoding="async" src="images/Beethoven1.jpg" alt="room" width="413" height="420">
+                    </picture>
+                    <h3 class="cs-h3">Beethoven Tickets</h3>
+                    <p class="cs-item-text">
+                        February 15 | Silverwood Stage
+                        <br>
+                        Ticket prices for Beethoven in Concert depend on various factors, such as purchase timing, venue, and seat location. You can find Beethoven tickets for as low as $85 on TicketsHub. Experience the timeless brilliance of Beethoven’s masterpieces at an affordable price. Most performances run between 1.5 to 3 hours, including potential intermissions or encores.
+                    </p>
+                    <span class="cs-fake-link text-dark">
+                        Buy Ticket
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
+                    </span>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="loginForm.html" class="cs-link">
+                    <picture class="cs-picture rounded">
+                        <!--Mobile Image-->
+                        <!-- <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/nuclear.jpg"> -->
+                        <!--Tablet and above Image-->
+                        <!-- <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/nuclear.jpg"> -->
+                        <img loading="lazy" decoding="async" src="images/HowlsMovingCastle.jpg" alt="room" width="413" height="420">
+                    </picture>
+                    <h3 class="cs-h3">Howl's Moving Castle: SoundTrackFest</h3>
+                    <p class="cs-item-text">
+                        January 20 | Crimson Peak Auditorium <br>
+                        Step into the Magic!
+
+Experience the enchanting melodies of Howl's Moving Castle, live in concert.
+
+Let Joe Hisaishi's breathtaking score transport you.
+
+A whimsical and emotional journey awaits!
+
+Tickets available now!</p>
+                    <span class="cs-fake-link text-dark">
+                        Buy Ticket
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
+                    </span>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="loginForm.html" class="cs-link">
+                    <picture class="cs-picture rounded">
+                        <!--Mobile Image-->
+                        <!-- <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/nuclear.jpg"> -->
+                        <!--Tablet and above Image-->
+                        <!-- <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/nuclear.jpg"> -->
+                        <img loading="lazy" decoding="async" src="images/AoT.jpg" alt="room" width="413" height="420">
+                    </picture>
+                    <h3 class="cs-h3">Attack On Titans: Beyond The Walls World Tour</h3>
+                    <p class="cs-item-text">
+                        December 5 | Horizon Hall <br>
+                        Feel the Roar. Hear the Fight.
+
+                        Experience the epic theme songs and powerful soundtrack of Attack on Titan brought to life in a thrilling live theatre event!
+                        
+                        Immerse yourself in the music that defined a phenomenon.
+                        
+                        Get your tickets now!
+                    </p>
+                    <span class="cs-fake-link text-dark">
+                        Buy Ticket
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
+                    </span>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="loginForm.html" class="cs-link">
+                    <picture class="cs-picture rounded">
+                        <!--Mobile Image-->
+                        <!-- <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/nuclear.jpg"> -->
+                        <!--Tablet and above Image-->
+                        <!-- <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/nuclear.jpg"> -->
+                        <img loading="lazy" decoding="async" src="images/avatar.jpg" alt="room" width="413" height="420">
+                    </picture>
+                    <h3 class="cs-h3">Avatar: The Last Airbender In Concert Tickets</h3>
+                    <p class="cs-item-text">
+                        November 10 | Starfall Theatre<br>
+                        Experience the Music. Master the Elements.
+
+                        Journey through the world of Avatar: The Last Airbender with a live performance of its unforgettable score!
+                        
+                        From epic battles to heartfelt moments, feel the spirit of the Four Nations.
+                        
+                        Get your tickets and let the music move you!
+                    </p>
+                        <span class="cs-fake-link text-dark">
+                        Buy Ticket
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Services                  -->
+<!-- ============================================ -->
+
+<section id="services-1355">
+    <div class="cs-container">
+        <div class="cs-content ">
+            <h2 class="cs-title">Top Broadway shows </h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="broadway.html" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">RENT</span> </h3>
+                </a>
+                <picture class="cs-background">
+                    <!-- <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting2.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting2.jpg"> -->
+                    <img decoding="async" src="images/rent3.jpg" alt="construction" width="305" height="305" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="broadway.html" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">The Witches of Oz</span></h3>
+                </a>
+                <picture class="cs-background">
+                    <!-- <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting3.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting3.jpg"> -->
+                    <img decoding="async" src="images/TheWitchesOfOz2.jpg" alt="construction" width="305" height="305" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="broadway.html" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">The Phanton of the Opera</span></h3>
+                </a>
+                <picture class="cs-background">
+                    <!-- <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting1.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting1.jpg"> -->
+                    <img decoding="async" src="images/PhantomOfTheOpera4.png" alt="construction" width="305" height="305" aria-hidden="true">
+                </picture>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Services                  -->
+<!-- ============================================ -->
+
+<section id="services-1355">
+    <div class="cs-container">
+        <div class="cs-content ">
+            <h2 class="cs-title">Popular Comedy Shows</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="comedy.html" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Chris Rock</span></h3>
+                </a>
+                <picture class="cs-background">
+                    <!-- <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting3.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting3.jpg"> -->
+                    <img decoding="async" src="images/ChrisRock.jpg" alt="construction" width="305" height="305" aria-hidden="true">
+                </picture>
+            </li>          
+            <li class="cs-item">
+                <a href="comedy.html" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Jimmy O. Yang</span></h3>
+                </a>
+                <picture class="cs-background">
+                    <!-- <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting1.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting1.jpg"> -->
+                    <img decoding="async" src="images/JmmyOYang1.jpg" alt="construction" width="305" height="305" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="comedy.html" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Mark Norman</span> </h3>
+                </a>
+                <picture class="cs-background">
+                    <!-- <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting2.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting2.jpg"> -->
+                    <img decoding="async" src="images/Mark Norman.jpg" alt="construction" width="305" height="305" aria-hidden="true">
+                </picture>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+    </div>
+</section>
+
+
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-1672">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Our Customer Reviews</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="images/KobeBryant.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                    </picture>
+                    <span class="cs-name">
+                        Kobe Bryant
+                        <span class="cs-job">Legendary NBA Champion</span>
+                    </span>
+                </div>
+                <div class="wrapper">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <p class="cs-review">
+                        “As an athlete, I know the value of perfect execution—and TicketHub nails it. From the moment I land on the homepage, everything flows like a well-run play: clear seating maps, lightning-fast load times, and one-click checkout. Buying tickets has never felt more like sinking a game-winner—smooth, confident, and absolutely clutch.”                    </p>
+                </div>
+                <!--Quote Icon-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="images/arnold.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                    </picture>
+                    <span class="cs-name">
+                        Arnold Schwarzenegger
+                        <span class="cs-job">Iconic Action Movie Star</span>
+                    </span>
+                </div>
+                <div class="wrapper">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <p class="cs-review">
+                        “TicketHub is a powerhouse website—strong, reliable, and built for performance. The interface pumps up in seconds, and purchasing tickets is like executing a perfectly timed rep: no hesitation, no strain. Whether you’re booking front-row seats or group blocks, TicketHub delivers efficiency with the force of a champion.”                    </p>
+                </div>
+                <!--Quote Icon-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="images/stallone.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                    </picture>
+                    <span class="cs-name">
+                        Sylvester Stallone
+                        <span class="cs-job">Hollywood Legend & Action Hero</span>
+                    </span>
+                </div>
+                <div class="wrapper">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <p class="cs-review">
+                        “Think of TicketHub as your corner man in the fight for the best seats. Every step—from selecting your event to confirming payment—is seamless, intuitive, and right on target. It’s the knockout blend of simplicity and speed. You step into the ring of live sports or concerts, and TicketHub gets you ringside every time.”                    </p>
+                </div>
+                <!--Quote Icon-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-1761">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-group">
+            <!-- <img class="cs-logomark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-logomark.svg" alt="logo" loading="lazy" decoding="async" height="100" width="122"> -->
+            <h2 class="cs-title"><br>TicketHub</h2>
+
+        </div>
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Menu</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="">Home</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">How it works</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">How to sell</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">About us</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Become a partner</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Resources</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="">About</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Press</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Jobs</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Inclusion</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Digital Accessibility</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">TicketHub Blog</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Social</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="">Twitter</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Facebook</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Instagram</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Tiktok</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">YouTube</a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- Links -->
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Developers</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="">Platform</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Developer Blog</a>
+                </li>
+            </ul>
+        </div>
+    
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-credit">
+            © Copyright 2025 <a href="" class="cs-credit-link" target="_blank">TicketsHub</a>
+        </span>
+        <div class="cs-bottom-links">
+            <a href="" class="cs-bottom-link">Terms & Conditions</a>
+            <a href="" class="cs-bottom-link">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
